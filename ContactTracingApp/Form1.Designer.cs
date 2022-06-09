@@ -29,8 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,51 +58,97 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // panel3
             // 
-            this.tableLayoutPanel1.AutoScroll = true;
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel1.BackgroundImage")));
-            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(721, 596);
-            this.tableLayoutPanel1.TabIndex = 9;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(159, 508);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(403, 85);
+            this.panel3.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(37, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(335, 45);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "The collected information will only be used for contact tracing\r\n in the event of" +
+    " an emergency.\r\nCivilian confidentiality is observed.";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(159, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(403, 85);
+            this.panel2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(114, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(275, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Polytechnic University of the Philippines\r\nUnofficial Contact Tracing App";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 86);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(112, 56);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(272, 74);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.buttonSubmit);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label2);
@@ -103,11 +165,134 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 408);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.radioButton7);
+            this.panel5.Controls.Add(this.radioButton8);
+            this.panel5.Location = new System.Drawing.Point(19, 321);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(353, 24);
+            this.panel5.TabIndex = 17;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton7.Location = new System.Drawing.Point(109, 2);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(41, 19);
+            this.radioButton7.TabIndex = 1;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "No";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton8.Location = new System.Drawing.Point(3, 2);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(42, 19);
+            this.radioButton8.TabIndex = 0;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Yes";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(21, 281);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(299, 30);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Have you or anyone you have recently been exposed to\r\nshowed signs of sickness? (" +
+    "i.e. coughing, fever, etc.)";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.radioButton5);
+            this.panel4.Controls.Add(this.radioButton4);
+            this.panel4.Controls.Add(this.radioButton3);
+            this.panel4.Location = new System.Drawing.Point(19, 246);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(353, 24);
+            this.panel4.TabIndex = 15;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton5.Location = new System.Drawing.Point(259, 2);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(41, 19);
+            this.radioButton5.TabIndex = 2;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "No";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton4.Location = new System.Drawing.Point(109, 2);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(110, 19);
+            this.radioButton4.TabIndex = 1;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Fully Vaccinated";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton3.Location = new System.Drawing.Point(3, 2);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(69, 19);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "1st Dose";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(21, 226);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 15);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Have you been vaccinated?";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton2.Location = new System.Drawing.Point(223, 77);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(63, 19);
+            this.radioButton2.TabIndex = 13;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton1.Location = new System.Drawing.Point(128, 77);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(51, 19);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // buttonSubmit
             // 
-            this.buttonSubmit.Location = new System.Drawing.Point(164, 362);
+            this.buttonSubmit.Location = new System.Drawing.Point(163, 382);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 11;
@@ -129,20 +314,19 @@
             "2:00-3:00 PM",
             "3:00-4:00 PM",
             "4:00-5:00 PM"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 225);
+            this.comboBox1.Location = new System.Drawing.Point(23, 188);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 23);
+            this.comboBox1.Size = new System.Drawing.Size(136, 23);
             this.comboBox1.TabIndex = 10;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(49, 42);
+            this.label2.Location = new System.Drawing.Point(76, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(314, 25);
+            this.label2.Size = new System.Drawing.Size(257, 21);
             this.label2.TabIndex = 9;
             this.label2.Text = "Fill out the necessary information:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -176,11 +360,10 @@
             "2030",
             "2031",
             "2032"});
-            this.comboBox4.Location = new System.Drawing.Point(337, 225);
+            this.comboBox4.Location = new System.Drawing.Point(337, 187);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(63, 23);
+            this.comboBox4.Size = new System.Drawing.Size(40, 23);
             this.comboBox4.TabIndex = 8;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -221,11 +404,10 @@
             "29",
             "30",
             "31"});
-            this.comboBox3.Location = new System.Drawing.Point(256, 225);
+            this.comboBox3.Location = new System.Drawing.Point(263, 187);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(63, 23);
+            this.comboBox3.Size = new System.Drawing.Size(40, 23);
             this.comboBox3.TabIndex = 7;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -247,21 +429,20 @@
             "10",
             "11",
             "12"});
-            this.comboBox2.Location = new System.Drawing.Point(176, 225);
+            this.comboBox2.Location = new System.Drawing.Point(187, 187);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(63, 23);
+            this.comboBox2.Size = new System.Drawing.Size(40, 23);
             this.comboBox2.TabIndex = 6;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // textBox5
             // 
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(206, 189);
+            this.textBox5.Location = new System.Drawing.Point(208, 149);
             this.textBox5.Name = "textBox5";
             this.textBox5.PlaceholderText = "Email";
-            this.textBox5.Size = new System.Drawing.Size(194, 23);
+            this.textBox5.Size = new System.Drawing.Size(169, 23);
             this.textBox5.TabIndex = 4;
             // 
             // textBox4
@@ -269,10 +450,10 @@
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(3, 189);
+            this.textBox4.Location = new System.Drawing.Point(23, 149);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Contact Number";
-            this.textBox4.Size = new System.Drawing.Size(199, 23);
+            this.textBox4.Size = new System.Drawing.Size(166, 23);
             this.textBox4.TabIndex = 3;
             // 
             // textBox3
@@ -280,10 +461,10 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(3, 155);
+            this.textBox3.Location = new System.Drawing.Point(23, 107);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "Address";
-            this.textBox3.Size = new System.Drawing.Size(397, 23);
+            this.textBox3.Size = new System.Drawing.Size(354, 23);
             this.textBox3.TabIndex = 2;
             // 
             // textBox2
@@ -291,88 +472,45 @@
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(243, 118);
+            this.textBox2.Location = new System.Drawing.Point(243, 45);
             this.textBox2.Name = "textBox2";
             this.textBox2.PlaceholderText = "Last Name";
-            this.textBox2.Size = new System.Drawing.Size(157, 23);
+            this.textBox2.Size = new System.Drawing.Size(134, 23);
             this.textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(3, 118);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox1.Location = new System.Drawing.Point(23, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "First Name";
-            this.textBox1.Size = new System.Drawing.Size(234, 23);
+            this.textBox1.Size = new System.Drawing.Size(204, 23);
             this.textBox1.TabIndex = 0;
             // 
-            // panel2
+            // tableLayoutPanel1
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(159, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 85);
-            this.panel2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(114, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 30);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Polytechnic University of the Philippines\r\nUnofficial Contact Tracing App";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 86);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(112, 56);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(272, 74);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(159, 508);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(403, 85);
-            this.panel3.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(9, -3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(383, 51);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "The collected information will only be used for contact tracing\r\n in the event of" +
-    " an emergency.\r\nCivilian confidentiality is observed.";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel1.AutoScroll = true;
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel1.BackgroundImage")));
+            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(721, 596);
+            this.tableLayoutPanel1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -381,32 +519,49 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(721, 596);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximumSize = new System.Drawing.Size(3648, 2736);
             this.MinimumSize = new System.Drawing.Size(737, 635);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Contact Tracer";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private TableLayoutPanel tableLayoutPanel1;
+
+        private Panel panel3;
+        private Label label3;
+        private Panel panel2;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
         private Panel panel1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
+        private Button buttonSubmit;
+        private ComboBox comboBox1;
+        private Label label2;
         private ComboBox comboBox4;
         private ComboBox comboBox3;
         private ComboBox comboBox2;
@@ -415,14 +570,15 @@
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
-        private PictureBox pictureBox1;
-        private Panel panel2;
-        private Label label1;
-        private PictureBox pictureBox2;
-        private Label label2;
-        private ComboBox comboBox1;
-        private Panel panel3;
-        private Label label3;
-        private Button buttonSubmit;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Label label4;
+        private Panel panel4;
+        private RadioButton radioButton5;
+        private RadioButton radioButton4;
+        private RadioButton radioButton3;
+        private Panel panel5;
+        private RadioButton radioButton7;
+        private RadioButton radioButton8;
+        private Label label5;
     }
 }

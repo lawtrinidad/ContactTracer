@@ -5,7 +5,6 @@ namespace ContactTracingApp
 
         public Form1()
         {
-            
             InitializeComponent();
             this.DoubleBuffered = true;
         }
@@ -13,36 +12,6 @@ namespace ContactTracingApp
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
@@ -56,6 +25,39 @@ namespace ContactTracingApp
             string Email = textBox5.Text;
             string Time = comboBox1.Text;
             string Date = (comboBox2.Text + comboBox3.Text + comboBox4.Text);
+            string Sex;
+            string Vaccination;
+            string HealthState;
+            
+            if (radioButton1.Checked == true)
+            {
+                Sex = "Male";
+            }
+            else
+            {
+                Sex = "Female";
+            }
+
+            if (radioButton3.Checked == true)
+            {
+                Vaccination = "1st Dose";
+            } else if(radioButton4.Checked == true)
+            {
+                Vaccination = "Fully Vaccinated";
+            }
+            else
+            {
+                Vaccination = "None";
+            }
+            
+            if (radioButton8.Checked == true)
+            {
+                HealthState = "Risk";
+            }
+            else
+            {
+                HealthState = "Safe";
+            }
 
             //To make sure all information is gathered:
 
@@ -70,11 +72,16 @@ namespace ContactTracingApp
                 MessageBox.Show("Please include both the date and time of filling up this form.");
                 return;
             }
+            if (((radioButton1.Checked == false) && (radioButton2.Checked == false)) || ((radioButton3.Checked == false) && (radioButton4.Checked == false) && (radioButton5.Checked == false)) || ((radioButton7.Checked == false) && (radioButton8.Checked == false)))
+            {
+                MessageBox.Show("Please fill up all required fields.");
+                return;
+            }
             
             //Recording the data
 
              StreamWriter recordContact = File.AppendText(@"C:\Users\Public\Documents\Contracter\" + Date + ".txt");
-             recordContact.WriteLine(FirstName + " " + LastName + " " + Address + " " + PhoneNumber + " " + Email + " " + Time + " ");
+             recordContact.WriteLine(FirstName + " " + LastName + " " + Sex + " " + Address + " " + PhoneNumber + " " + Email + " " + Time + " " + Vaccination + " " + HealthState);
              recordContact.Close();
 
             //Closing parts
@@ -93,10 +100,19 @@ namespace ContactTracingApp
                     {
                         ((ComboBox)tools).SelectedIndex = -1;
                     }
+                    if (tools is RadioButton)
+                    {
+                        ((RadioButton)tools).Checked = false;
+                    }
                 }
             }
-
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            radioButton5.Checked = false;
+            radioButton7.Checked = false;
+            radioButton8.Checked = false;
 
         }
+
     }
 }
