@@ -7,6 +7,12 @@ namespace ContactTracingApp
         {
             InitializeComponent();
             this.DoubleBuffered = true;
+
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -67,7 +73,7 @@ namespace ContactTracingApp
                 return;
             }
 
-            if ((comboBox1.Text == "") || (comboBox2.Text == "") || (comboBox3.Text == "") || (comboBox4.Text == ""))
+            if (((comboBox1.Text == "") || (comboBox2.Text == "") || (comboBox3.Text == "") || (comboBox4.Text == "")) || ((comboBox1.Text == "Time") || (comboBox2.Text == "MM") || (comboBox3.Text == "DD") || (comboBox4.Text == "YYYY")))
             {
                 MessageBox.Show("Please include both the date and time of filling up this form.");
                 return;
@@ -98,7 +104,7 @@ namespace ContactTracingApp
                     }
                     if (tools is ComboBox)
                     {
-                        ((ComboBox)tools).SelectedIndex = -1;
+                        ((ComboBox)tools).SelectedIndex = 0;
                     }
                     if (tools is RadioButton)
                     {
@@ -114,5 +120,11 @@ namespace ContactTracingApp
 
         }
 
+        private void Records_Click(object sender, EventArgs e)
+        {
+            Form2 records = new Form2();
+            records.Show();
+            this.Visible = false;
+        }
     }
 }

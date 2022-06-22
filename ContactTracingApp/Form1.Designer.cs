@@ -32,7 +32,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,6 +58,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Records = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +68,7 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -96,7 +98,6 @@
             // 
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -105,24 +106,12 @@
             this.panel2.Size = new System.Drawing.Size(403, 85);
             this.panel2.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(114, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 30);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Polytechnic University of the Philippines\r\nUnofficial Contact Tracing App";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 86);
             this.pictureBox1.TabIndex = 1;
@@ -132,7 +121,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(112, 56);
+            this.pictureBox2.Location = new System.Drawing.Point(104, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(272, 74);
             this.pictureBox2.TabIndex = 3;
@@ -305,6 +294,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "Time",
             "7:00-8:00 AM",
             "8:00-9:00 AM",
             "9:00-10:00 AM",
@@ -339,6 +329,7 @@
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
+            "YYYY",
             "2012",
             "2013",
             "2014",
@@ -360,9 +351,9 @@
             "2030",
             "2031",
             "2032"});
-            this.comboBox4.Location = new System.Drawing.Point(337, 187);
+            this.comboBox4.Location = new System.Drawing.Point(315, 187);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(40, 23);
+            this.comboBox4.Size = new System.Drawing.Size(62, 23);
             this.comboBox4.TabIndex = 8;
             // 
             // comboBox3
@@ -373,6 +364,7 @@
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
+            "DD",
             "01",
             "02",
             "03",
@@ -404,9 +396,9 @@
             "29",
             "30",
             "31"});
-            this.comboBox3.Location = new System.Drawing.Point(263, 187);
+            this.comboBox3.Location = new System.Drawing.Point(253, 187);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(40, 23);
+            this.comboBox3.Size = new System.Drawing.Size(46, 23);
             this.comboBox3.TabIndex = 7;
             // 
             // comboBox2
@@ -417,6 +409,7 @@
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
+            "MM",
             "01",
             "02",
             "03",
@@ -431,7 +424,7 @@
             "12"});
             this.comboBox2.Location = new System.Drawing.Point(187, 187);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(40, 23);
+            this.comboBox2.Size = new System.Drawing.Size(51, 23);
             this.comboBox2.TabIndex = 6;
             // 
             // textBox5
@@ -501,6 +494,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel6, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -511,6 +505,26 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(721, 596);
             this.tableLayoutPanel1.TabIndex = 9;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Controls.Add(this.Records);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(568, 508);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(150, 85);
+            this.panel6.TabIndex = 4;
+            // 
+            // Records
+            // 
+            this.Records.Location = new System.Drawing.Point(66, 53);
+            this.Records.Name = "Records";
+            this.Records.Size = new System.Drawing.Size(75, 23);
+            this.Records.TabIndex = 0;
+            this.Records.Text = "Records";
+            this.Records.UseVisualStyleBackColor = true;
+            this.Records.Click += new System.EventHandler(this.Records_Click);
             // 
             // Form1
             // 
@@ -523,16 +537,16 @@
             this.ClientSize = new System.Drawing.Size(721, 596);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(3648, 2736);
             this.MinimumSize = new System.Drawing.Size(737, 635);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Contact Tracer";
+            this.Text = "Health Sensing Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -543,6 +557,7 @@
             this.panel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -553,7 +568,6 @@
         private Panel panel3;
         private Label label3;
         private Panel panel2;
-        private Label label1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel panel1;
@@ -580,5 +594,7 @@
         private RadioButton radioButton7;
         private RadioButton radioButton8;
         private Label label5;
+        private Panel panel6;
+        private Button Records;
     }
 }

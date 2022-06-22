@@ -16,3 +16,5 @@ D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\Contact
 D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.genruntimeconfig.cache
 D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ref\ContactTracingApp.dll
 D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Properties.Resources.resources
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Form2.resources
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Form3.resources
