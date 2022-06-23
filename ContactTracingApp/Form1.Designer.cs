@@ -59,7 +59,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.Records = new System.Windows.Forms.Button();
+            this.buttonToHub = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -509,22 +509,22 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.Records);
+            this.panel6.Controls.Add(this.buttonToHub);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(568, 508);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(150, 85);
             this.panel6.TabIndex = 4;
             // 
-            // Records
+            // buttonToHub
             // 
-            this.Records.Location = new System.Drawing.Point(66, 53);
-            this.Records.Name = "Records";
-            this.Records.Size = new System.Drawing.Size(75, 23);
-            this.Records.TabIndex = 0;
-            this.Records.Text = "Records";
-            this.Records.UseVisualStyleBackColor = true;
-            this.Records.Click += new System.EventHandler(this.Records_Click);
+            this.buttonToHub.Location = new System.Drawing.Point(55, 53);
+            this.buttonToHub.Name = "buttonToHub";
+            this.buttonToHub.Size = new System.Drawing.Size(86, 23);
+            this.buttonToHub.TabIndex = 0;
+            this.buttonToHub.Text = "Main Menu";
+            this.buttonToHub.UseVisualStyleBackColor = true;
+            this.buttonToHub.Click += new System.EventHandler(this.buttonToHub_Click);
             // 
             // Form1
             // 
@@ -595,6 +595,6 @@
         private RadioButton radioButton8;
         private Label label5;
         private Panel panel6;
-        private Button Records;
+        private Button buttonToHub;
     }
 }

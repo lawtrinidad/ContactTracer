@@ -7,7 +7,10 @@ namespace ContactTracingApp
         {
             InitializeComponent();
             this.DoubleBuffered = true;
-
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+            comboBox3.SelectedIndex = 0;
+            comboBox4.SelectedIndex = 0;
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -22,14 +25,12 @@ namespace ContactTracingApp
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            //Declaring the variables
-
-            string FirstName = textBox1.Text;
+            string FirstName = textBox1.Text.Replace(" ", "");
             string LastName = textBox2.Text;
-            string Address = textBox3.Text;
+            string Address = textBox3.Text.Replace(" ","");
             string PhoneNumber = textBox4.Text;
             string Email = textBox5.Text;
-            string Time = comboBox1.Text;
+            string Time = comboBox1.Text.Replace(" ", "");
             string Date = (comboBox2.Text + comboBox3.Text + comboBox4.Text);
             string Sex;
             string Vaccination;
@@ -46,10 +47,10 @@ namespace ContactTracingApp
 
             if (radioButton3.Checked == true)
             {
-                Vaccination = "1st Dose";
+                Vaccination = "1stDose";
             } else if(radioButton4.Checked == true)
             {
-                Vaccination = "Fully Vaccinated";
+                Vaccination = "FullyVaccinated";
             }
             else
             {
@@ -64,8 +65,6 @@ namespace ContactTracingApp
             {
                 HealthState = "Safe";
             }
-
-            //To make sure all information is gathered:
 
             if ((textBox1.Text == "") || (textBox2.Text == "") || (textBox3.Text == "") || (textBox4.Text == "") || (textBox5.Text == ""))
             {
@@ -83,14 +82,10 @@ namespace ContactTracingApp
                 MessageBox.Show("Please fill up all required fields.");
                 return;
             }
-            
-            //Recording the data
 
              StreamWriter recordContact = File.AppendText(@"C:\Users\Public\Documents\Contracter\" + Date + ".txt");
              recordContact.WriteLine(FirstName + " " + LastName + " " + Sex + " " + Address + " " + PhoneNumber + " " + Email + " " + Time + " " + Vaccination + " " + HealthState);
              recordContact.Close();
-
-            //Closing parts
 
             MessageBox.Show("Thank you for following through with our contact tracing app and protocol.\n\nHave a nice day!");
 
@@ -120,11 +115,10 @@ namespace ContactTracingApp
 
         }
 
-        private void Records_Click(object sender, EventArgs e)
+        private void buttonToHub_Click(object sender, EventArgs e)
         {
-            Form2 records = new Form2();
-            records.Show();
-            this.Visible = false;
+            Form3 hub = new Form3();
+            Application.Restart();
         }
     }
 }

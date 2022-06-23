@@ -16,6 +16,7 @@ namespace ContactTracingApp
         {
             InitializeComponent();
             this.DoubleBuffered = true;
+
         }
 
         private void buttonOpenRecords_Click(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace ContactTracingApp
             {
                 Form2 records = new Form2();
                 records.Show();
-                this.Visible = false;
+                this.Hide();
             }
             else
             {
@@ -56,7 +57,50 @@ namespace ContactTracingApp
         {
             Form1 surveyform = new Form1();
             surveyform.Show();
-            this.Visible = false;
+            this.Hide();
+        }
+
+        private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if (e.Column == 0)
+            {
+                e.Graphics.FillRectangle(Brushes.Gainsboro, e.CellBounds);
+            }
+        }
+
+        private void Form3_SizeChanged(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                foreach (Control c in this.tableLayoutPanel1.Controls)
+                {
+                    TableLayoutColumnStyleCollection styles = this.tableLayoutPanel1.ColumnStyles;
+                    int column = tableLayoutPanel1.GetColumn(c);
+                    foreach (ColumnStyle style in styles)
+                    {
+                        if (column == 0)
+                        {
+                            style.SizeType = SizeType.Percent;
+                            style.Width = 33;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                foreach (Control c in this.tableLayoutPanel1.Controls)
+                {
+                    TableLayoutColumnStyleCollection styles = this.tableLayoutPanel1.ColumnStyles;
+                    int column = tableLayoutPanel1.GetColumn(c);
+                    foreach (ColumnStyle style in styles)
+                    {
+                        if (column == 0)
+                        {
+                            style.SizeType = SizeType.AutoSize;
+                        }
+                    }
+                }
+            }
         }
     }
 }
