@@ -117,7 +117,6 @@ namespace ContactTracingApp
 
         private void buttonToHub_Click(object sender, EventArgs e)
         {
-            Form3 hub = new Form3();
             Application.Restart();
         }
     }

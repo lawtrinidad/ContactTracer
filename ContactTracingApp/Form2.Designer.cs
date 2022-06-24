@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panelSideBar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.buttonOpenFile = new System.Windows.Forms.Button();
             this.labelChooseFile = new System.Windows.Forms.Label();
             this.comboBoxYear = new System.Windows.Forms.ComboBox();
@@ -65,7 +66,6 @@
             this.labelTime = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelInstruction1 = new System.Windows.Forms.Label();
-            this.labelInstruction2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -74,6 +74,7 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.labelSex = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelInstruction2 = new System.Windows.Forms.Label();
             this.panelSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -89,6 +90,7 @@
             // panelSideBar
             // 
             this.panelSideBar.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panelSideBar.Controls.Add(this.button1);
             this.panelSideBar.Controls.Add(this.buttonOpenFile);
             this.panelSideBar.Controls.Add(this.labelChooseFile);
             this.panelSideBar.Controls.Add(this.comboBoxYear);
@@ -101,6 +103,25 @@
             this.panelSideBar.Name = "panelSideBar";
             this.panelSideBar.Size = new System.Drawing.Size(244, 678);
             this.panelSideBar.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 625);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(244, 53);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "MAIN MENU";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonOpenFile
             // 
@@ -293,9 +314,9 @@
             this.panelInfo.Controls.Add(this.labelDataLName);
             this.panelInfo.Controls.Add(this.labelFNameField);
             this.panelInfo.Controls.Add(this.labelDataFName);
-            this.panelInfo.Location = new System.Drawing.Point(890, -9);
+            this.panelInfo.Location = new System.Drawing.Point(937, -9);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(361, 695);
+            this.panelInfo.Size = new System.Drawing.Size(314, 695);
             this.panelInfo.TabIndex = 2;
             this.panelInfo.Visible = false;
             // 
@@ -473,7 +494,7 @@
             this.listBox3.Margin = new System.Windows.Forms.Padding(9);
             this.listBox3.Name = "listBox3";
             this.listBox3.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBox3.Size = new System.Drawing.Size(184, 540);
+            this.listBox3.Size = new System.Drawing.Size(215, 540);
             this.listBox3.TabIndex = 4;
             // 
             // listBox4
@@ -545,28 +566,17 @@
             // 
             this.labelInstruction1.AutoSize = true;
             this.labelInstruction1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelInstruction1.ForeColor = System.Drawing.Color.IndianRed;
-            this.labelInstruction1.Location = new System.Drawing.Point(275, 31);
+            this.labelInstruction1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelInstruction1.Location = new System.Drawing.Point(269, 19);
             this.labelInstruction1.Name = "labelInstruction1";
             this.labelInstruction1.Size = new System.Drawing.Size(185, 32);
             this.labelInstruction1.TabIndex = 13;
             this.labelInstruction1.Text = "SELECT A DATE";
             // 
-            // labelInstruction2
-            // 
-            this.labelInstruction2.AutoSize = true;
-            this.labelInstruction2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelInstruction2.ForeColor = System.Drawing.Color.IndianRed;
-            this.labelInstruction2.Location = new System.Drawing.Point(275, 28);
-            this.labelInstruction2.Name = "labelInstruction2";
-            this.labelInstruction2.Size = new System.Drawing.Size(197, 32);
-            this.labelInstruction2.TabIndex = 14;
-            this.labelInstruction2.Text = "SELECT A NAME";
-            this.labelInstruction2.Visible = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
@@ -574,7 +584,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(275, 66);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(585, 589);
+            this.panel1.Size = new System.Drawing.Size(630, 589);
             this.panel1.TabIndex = 15;
             // 
             // panel6
@@ -583,9 +593,9 @@
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.listBox5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(498, 0);
+            this.panel6.Location = new System.Drawing.Point(549, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(87, 589);
+            this.panel6.Size = new System.Drawing.Size(79, 587);
             this.panel6.TabIndex = 20;
             // 
             // panel5
@@ -594,9 +604,9 @@
             this.panel5.Controls.Add(this.listBox4);
             this.panel5.Controls.Add(this.labelTime);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(407, 0);
+            this.panel5.Location = new System.Drawing.Point(458, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(91, 589);
+            this.panel5.Size = new System.Drawing.Size(91, 587);
             this.panel5.TabIndex = 19;
             // 
             // panel4
@@ -605,9 +615,9 @@
             this.panel4.Controls.Add(this.listBox3);
             this.panel4.Controls.Add(this.labelAddress);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(209, 0);
+            this.panel4.Location = new System.Drawing.Point(229, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(198, 589);
+            this.panel4.Size = new System.Drawing.Size(229, 587);
             this.panel4.TabIndex = 18;
             // 
             // panel3
@@ -616,9 +626,9 @@
             this.panel3.Controls.Add(this.listBox2);
             this.panel3.Controls.Add(this.labelSex);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(158, 0);
+            this.panel3.Location = new System.Drawing.Point(178, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(51, 589);
+            this.panel3.Size = new System.Drawing.Size(51, 587);
             this.panel3.TabIndex = 17;
             // 
             // listBox2
@@ -651,8 +661,20 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(158, 589);
+            this.panel2.Size = new System.Drawing.Size(178, 587);
             this.panel2.TabIndex = 16;
+            // 
+            // labelInstruction2
+            // 
+            this.labelInstruction2.AutoSize = true;
+            this.labelInstruction2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelInstruction2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelInstruction2.Location = new System.Drawing.Point(269, 19);
+            this.labelInstruction2.Name = "labelInstruction2";
+            this.labelInstruction2.Size = new System.Drawing.Size(197, 32);
+            this.labelInstruction2.TabIndex = 14;
+            this.labelInstruction2.Text = "SELECT A NAME";
+            this.labelInstruction2.Visible = false;
             // 
             // Form2
             // 
@@ -715,7 +737,6 @@
         private Label labelTime;
         private Label label1;
         private Label labelInstruction1;
-        private Label labelInstruction2;
         private Panel panel1;
         private Panel panel5;
         private Panel panel4;
@@ -742,5 +763,7 @@
         private Label labelDataVax;
         private Label labelHealthField;
         private Label labelDataHealth;
+        private Button button1;
+        private Label labelInstruction2;
     }
 }

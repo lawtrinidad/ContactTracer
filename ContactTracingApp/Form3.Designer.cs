@@ -245,6 +245,7 @@
             this.buttonCredits.TabIndex = 0;
             this.buttonCredits.Text = "About";
             this.buttonCredits.UseVisualStyleBackColor = false;
+            this.buttonCredits.Click += new System.EventHandler(this.buttonCredits_Click);
             // 
             // panel2
             // 

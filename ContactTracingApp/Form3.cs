@@ -64,7 +64,7 @@ namespace ContactTracingApp
         {
             if (e.Column == 0)
             {
-                e.Graphics.FillRectangle(Brushes.Gainsboro, e.CellBounds);
+                e.Graphics.FillRectangle(Brushes.WhiteSmoke, e.CellBounds);
             }
         }
 
@@ -101,6 +101,11 @@ namespace ContactTracingApp
                     }
                 }
             }
+        }
+
+        private void buttonCredits_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is a contact tracing app, created to be themed to match the Polytechnic University of the Philippines.\n\nMade by John Lawrence E. Trinidad, as a BS Computer Engineering freshman at PUP.\n\n");
         }
     }
 }

@@ -33,6 +33,12 @@ namespace ContactTracingApp
 
         private void buttonOpenFile_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            listBox4.Items.Clear();
+            listBox5.Items.Clear();
+
             string Date = (comboBoxMonth.Text + comboBoxDay.Text + comboBoxYear.Text);
 
             if ((comboBoxMonth.Text == "MM") || (comboBoxDay.Text == "DD") || (comboBoxYear.Text == "YYYY"))
@@ -58,6 +64,10 @@ namespace ContactTracingApp
                     string[] wordCut = new string[] { " " };
                     string[] word = eachWord.Split(wordCut, StringSplitOptions.None);
                     string FirstName = word[0];
+                    if (word[0] == "")
+                    {
+                        return;
+                    }
                     string LastName = word[1];
                     string Sex = word[2];
                     string Address = word[3];
@@ -78,7 +88,7 @@ namespace ContactTracingApp
                 MessageBox.Show("No records can be found from that date.");
                 return;
             }
-
+            return;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -125,6 +135,11 @@ namespace ContactTracingApp
                 labelVaxField.Text = Vax;
                 labelHealthField.Text = HealthState;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
