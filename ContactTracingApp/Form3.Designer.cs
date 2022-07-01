@@ -77,7 +77,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(772, 572);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(873, 667);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel1_CellPaint);
             // 
@@ -93,7 +93,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.MinimumSize = new System.Drawing.Size(337, 566);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(337, 566);
+            this.panel1.Size = new System.Drawing.Size(337, 661);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -120,7 +120,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(337, 323);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(337, 418);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // buttonSurveyForm
@@ -129,7 +129,7 @@
             this.buttonSurveyForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonSurveyForm.FlatAppearance.BorderColor = System.Drawing.Color.NavajoWhite;
             this.buttonSurveyForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSurveyForm.Location = new System.Drawing.Point(3, 73);
+            this.buttonSurveyForm.Location = new System.Drawing.Point(3, 95);
             this.buttonSurveyForm.Name = "buttonSurveyForm";
             this.buttonSurveyForm.Size = new System.Drawing.Size(331, 29);
             this.buttonSurveyForm.TabIndex = 0;
@@ -152,7 +152,7 @@
             // 
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPassword.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxPassword.Location = new System.Drawing.Point(3, 38);
+            this.textBoxPassword.Location = new System.Drawing.Point(3, 49);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PlaceholderText = "Password";
             this.textBoxPassword.Size = new System.Drawing.Size(331, 23);
@@ -165,7 +165,7 @@
             this.buttonOpenRecords.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonOpenRecords.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
             this.buttonOpenRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenRecords.Location = new System.Drawing.Point(3, 108);
+            this.buttonOpenRecords.Location = new System.Drawing.Point(3, 141);
             this.buttonOpenRecords.Name = "buttonOpenRecords";
             this.buttonOpenRecords.Size = new System.Drawing.Size(331, 29);
             this.buttonOpenRecords.TabIndex = 1;
@@ -176,7 +176,7 @@
             // splitContainerLogInDialog
             // 
             this.splitContainerLogInDialog.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitContainerLogInDialog.Location = new System.Drawing.Point(3, 143);
+            this.splitContainerLogInDialog.Location = new System.Drawing.Point(3, 187);
             this.splitContainerLogInDialog.Name = "splitContainerLogInDialog";
             // 
             // splitContainerLogInDialog.Panel1
@@ -222,7 +222,7 @@
             // splitContainerQuitEtc
             // 
             this.splitContainerQuitEtc.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitContainerQuitEtc.Location = new System.Drawing.Point(0, 535);
+            this.splitContainerQuitEtc.Location = new System.Drawing.Point(0, 630);
             this.splitContainerQuitEtc.Name = "splitContainerQuitEtc";
             // 
             // splitContainerQuitEtc.Panel1
@@ -313,7 +313,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(772, 572);
+            this.ClientSize = new System.Drawing.Size(873, 667);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

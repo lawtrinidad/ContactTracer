@@ -18,3 +18,9 @@ D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ref\Con
 D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Properties.Resources.resources
 D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Form2.resources
 D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Form3.resources
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.Form4.resources
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\obj\Debug\net6.0-windows\ContactTracingApp.csproj.CopyComplete
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\bin\Debug\net6.0-windows\AForge.dll
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\bin\Debug\net6.0-windows\AForge.Video.dll
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+D:\Univ\OOP\ContactTracingApp\ContactTracingApp\bin\Debug\net6.0-windows\zxing.dll

@@ -59,7 +59,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.buttonToHub = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,15 +67,15 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
             // 
+            this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(159, 508);
+            this.panel3.Location = new System.Drawing.Point(100, 554);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(403, 85);
             this.panel3.TabIndex = 3;
@@ -97,13 +96,14 @@
             // panel2
             // 
             this.panel2.AutoSize = true;
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(159, 3);
+            this.panel2.Location = new System.Drawing.Point(100, 17);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 85);
+            this.panel2.Size = new System.Drawing.Size(403, 117);
             this.panel2.TabIndex = 2;
             // 
             // pictureBox1
@@ -130,6 +130,7 @@
             // panel1
             // 
             this.panel1.AutoSize = true;
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.panel5);
@@ -150,7 +151,7 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(159, 94);
+            this.panel1.Location = new System.Drawing.Point(100, 140);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 408);
             this.panel1.TabIndex = 0;
@@ -504,28 +505,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(721, 596);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(604, 688);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.buttonToHub);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(568, 508);
+            this.panel6.Location = new System.Drawing.Point(509, 600);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 85);
+            this.panel6.Size = new System.Drawing.Size(92, 85);
             this.panel6.TabIndex = 4;
-            // 
-            // buttonToHub
-            // 
-            this.buttonToHub.Location = new System.Drawing.Point(55, 53);
-            this.buttonToHub.Name = "buttonToHub";
-            this.buttonToHub.Size = new System.Drawing.Size(86, 23);
-            this.buttonToHub.TabIndex = 0;
-            this.buttonToHub.Text = "Main Menu";
-            this.buttonToHub.UseVisualStyleBackColor = true;
-            this.buttonToHub.Click += new System.EventHandler(this.buttonToHub_Click);
             // 
             // Form1
             // 
@@ -535,14 +525,14 @@
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(721, 596);
+            this.ClientSize = new System.Drawing.Size(604, 688);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(3648, 2736);
-            this.MinimumSize = new System.Drawing.Size(737, 635);
+            this.MinimumSize = new System.Drawing.Size(100, 100);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Health Sensing Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);
@@ -558,7 +548,6 @@
             this.panel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,30 +561,29 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel panel1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        public RadioButton radioButton2;
+        public RadioButton radioButton1;
         private Button buttonSubmit;
-        private ComboBox comboBox1;
+        public ComboBox comboBox1;
         private Label label2;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        public ComboBox comboBox4;
+        public ComboBox comboBox3;
+        public ComboBox comboBox2;
+        public TextBox textBox5;
+        public TextBox textBox4;
+        public TextBox textBox3;
+        public TextBox textBox2;
+        public TextBox textBox1;
         private TableLayoutPanel tableLayoutPanel1;
         private Label label4;
         private Panel panel4;
-        private RadioButton radioButton5;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
+        public RadioButton radioButton5;
+        public RadioButton radioButton4;
+        public RadioButton radioButton3;
         private Panel panel5;
-        private RadioButton radioButton7;
-        private RadioButton radioButton8;
+        public RadioButton radioButton7;
+        public RadioButton radioButton8;
         private Label label5;
         private Panel panel6;
-        private Button buttonToHub;
     }
 }

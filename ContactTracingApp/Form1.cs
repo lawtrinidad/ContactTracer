@@ -114,10 +114,5 @@ namespace ContactTracingApp
             radioButton8.Checked = false;
 
         }
-
-        private void buttonToHub_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
-        }
     }
 }

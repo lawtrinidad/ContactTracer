@@ -55,7 +55,7 @@ namespace ContactTracingApp
 
         private void buttonSurveyForm_Click(object sender, EventArgs e)
         {
-            Form1 surveyform = new Form1();
+            Form4 surveyform = new Form4();
             surveyform.Show();
             this.Hide();
         }
