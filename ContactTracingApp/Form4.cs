@@ -262,7 +262,6 @@ namespace ContactTracingApp
             string eachWord = textBoxQRText.Text;
             string[] wordCut = new string[] { " " };
             string[] word = eachWord.Split(wordCut, StringSplitOptions.None);
-            MessageBox.Show(word.Count().ToString());
 
             if ((word.Count() != 8) || (word.Count() >= 9))
             {
